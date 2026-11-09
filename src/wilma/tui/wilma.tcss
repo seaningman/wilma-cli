@@ -1,0 +1,47 @@
+/* Muted, calm palette — one place to retheme. */
+$w-bg: #14161b;
+$w-panel: #1b1e25;
+$w-line: #2e333d;
+$w-text: #d7dae0;
+$w-dim: #7d8594;
+$w-accent: #7fd4c1;
+$w-warm: #f0b27a;
+$w-alert: #ef7b7b;
+
+Screen { background: $w-bg; color: $w-text; }
+#banner { height: 5; padding: 0 2; background: $w-bg; color: $w-accent; }
+#banner-title { color: $w-text; text-style: bold; }
+TabbedContent { height: 1fr; }
+TabPane { padding: 1 2; }
+Tabs { background: $w-bg; }
+Tab { color: $w-dim; }
+Tab.-active { color: $w-accent; text-style: bold; background: $w-bg; }
+Tab:hover { background: $w-panel; }
+Underline > .underline--bar { color: $w-accent; background: $w-line; }
+
+.card { border: round $w-line; background: $w-panel; padding: 1 2; margin: 0 0 1 0; height: auto; }
+.card-title { color: $w-accent; text-style: bold; }
+.dim { color: $w-dim; }
+#cmd { border: round $w-line; background: $w-panel; margin: 0 0 1 0; }
+#cmd:focus { border: round $w-accent; }
+
+DataTable { background: $w-panel; border: round $w-line; height: 1fr; }
+DataTable > .datatable--header { background: $w-bg; color: $w-accent; text-style: bold; }
+DataTable > .datatable--cursor { background: $w-line; color: $w-text; }
+OptionList { background: $w-panel; border: round $w-line; width: 42%; }
+OptionList:focus { border: round $w-accent; }
+#reader { border: round $w-line; background: $w-panel; padding: 1 2; width: 1fr; }
+#day-label { height: 1; color: $w-accent; text-style: bold; margin: 0 0 1 0; }
+#status { height: 1; color: $w-dim; padding: 0 2; }
+
+ModalScreen { align: center middle; }
+#modal { width: 72%; max-width: 90; height: auto; max-height: 80%; border: round $w-accent; background: $w-panel; padding: 1 2; }
+#modal TextArea { height: 10; margin: 1 0; }
+Footer { background: $w-bg; }
+
+OptionList > .option-list--option-highlighted { background: $w-line; color: $w-text; text-style: none; }
+OptionList:focus > .option-list--option-highlighted { background: #2a4a45; color: $w-text; text-style: none; }
+OptionList > .option-list--option-hover { background: $w-line; }
+
+VerticalScroll#reader:focus, VerticalScroll#reader2:focus { border: round $w-accent; }
+DataTable:focus { border: round $w-accent; }
