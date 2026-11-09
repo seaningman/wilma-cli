@@ -29,7 +29,7 @@ wilma doctor
 ```
 Every data command takes `--json`.
 
-## Keys (no mouse needed)
+## Keybinds
 
 | Keys | Action |
 |---|---|
